@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Itim";
+}
+
+body {
+  overflow: hidden;
+}
+.container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("./images/lake.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+.inner-container {
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.inner-container h1 {
+  font-size: 40px;
+}
+.inner-container p {
+  text-align: right;
+}
+.actions-box {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+}
+.actions-box .btn {
+  width: 100px;
+  border-radius: 30px;
+  padding: 8px 0px;
+  border: none;
+  margin-right: 10px;
+  background-color: transparent;
+  border: 1px solid tomato;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+.btn.login-btn {
+  background-color: tomato;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.btn:active {
+  transform: translateY(0);
+}
+.modal-container {
+  z-index: 100;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    to right,
+    rgba(254, 95, 117, 0.8),
+    rgba(252, 152, 66, 0.8)
+  );
+  background-size: cover;
+  color: #fff;
+  width: 300px;
+  max-width: 90%;
+  border-radius: 10px;
+  padding: 20px;
+}
+.modal-container .close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.modal-container .modal-heading {
+  text-align: center;
+  margin: 20px 0 30px 0;
+}
+.modal-container .modal-description {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.input-box {
+  width: 90%;
+  margin: 0 auto 10px;
+  height: 30px;
+  position: relative;
+}
+.input-box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 0 0 0 30px;
+  color: #333;
+}
+.input-box i {
+  position: absolute;
+  color: #333;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.submit-btn {
+  border-radius: 8px;
+  border: none;
+  width: 90%;
+  height: 30px;
+  display: block;
+  margin: 20px auto 20px;
+  cursor: pointer;
+  background-color: #ffaacf;
+}
+.submit-btn:active {
+  transform: scale(0.98);
+}

@@ -12,10 +12,11 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>My Project</title>
+    <title>landing page with modals</title>
   </head>
   <body>
     <div class="container">
+      <div class="overlay"></div>
       <div class="inner-container">
         <h1>CodeAndCreate</h1>
         <p>learn how to code</p>
@@ -24,7 +25,7 @@
         <button class="btn login-btn">Log in</button>
         <button class="btn signup-btn">Sign up</button>
       </div>
-      <div class="modal-container signup-container">
+      <div class="modal-container" hidden>
         <i class="fa-solid fa-xmark close-btn"></i>
         <h1 class="modal-heading">CodeAndCreate</h1>
         <p class="modal-description">sign up</p>
@@ -41,10 +42,10 @@
             <i class="fa-solid fa-lock"></i>
             <input type="password" placeholder="Password" />
           </div>
-          <button type="submit">sign up</button>
+          <button type="submit" class="submit-btn">sign up</button>
         </form>
       </div>
-      <div class="modal-container login-container">
+      <div class="modal-container">
         <i class="fa-solid fa-xmark close-btn"></i>
         <h1 class="modal-heading">CodeAndCreate</h1>
         <p class="modal-description">Log in</p>
@@ -57,7 +58,7 @@
             <i class="fa-solid fa-lock"></i>
             <input type="password" placeholder="Password" />
           </div>
-          <button type="submit">log in</button>
+          <button type="submit" class="submit-btn">log in</button>
         </form>
       </div>
     </div>
