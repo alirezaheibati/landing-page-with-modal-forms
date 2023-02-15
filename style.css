@@ -20,6 +20,7 @@ body {
   position: relative;
 }
 .overlay {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -68,6 +69,7 @@ body {
   transform: translateY(0);
 }
 .modal-container {
+  display: none;
   z-index: 100;
   position: fixed;
   left: 50%;
